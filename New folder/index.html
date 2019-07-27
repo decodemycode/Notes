@@ -10,49 +10,6 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
- /*       ::-webkit-media-controls {
-            bottom: 60px;
-        }
-*/
-        #myVideo {
-            position: fixed;
-            top: 54px;
-            right: 0;
-            bottom: 0;
-            min-width: 100%;
-            min-height: 100%;
-            object-fit: contain
-        } 
- video::-webkit-media-controls-enclosure {
-    overflow:hidden;
-    position: absolute;
-    bottom:60px
-}
-
-video::-webkit-media-controls-panel {
-    display: flex !important;
-    opacity: 1 !important;
-}
-
-        .content {
-            position: relative;
-            bottom: 0;
-            background: rgba(0, 0, 0, 0);
-            color: #f1f1f1;
-            width: 100%;
-            padding: 20px;
-        }
-
-        .card {
-            background: rgba(0, 0, 0, 0);
-            border: none;
-        }
-
-        .card-body {
-            background: rgba(0, 0, 0, 0);
-            border: none;
-        }
-
         textarea:focus::-webkit-input-placeholder {
             color: transparent;
 
@@ -83,6 +40,18 @@ video::-webkit-media-controls-panel {
             background-repeat: no-repeat;
         }
 
+        .like-btn-active1 {
+            position: absolute;
+            top: 3px;
+            left: 0px;
+            background: url('twitter-heart.png');
+            width: 60px;
+            height: 60px;
+            background-position: right;
+            background-size: 2900%;
+            background-repeat: no-repeat;
+        }
+
         .like-btn-active {
             background-position: right;
         }
@@ -109,12 +78,12 @@ video::-webkit-media-controls-panel {
             }
         }
     </style>
-    <title>Welcome to Note</title>
+    <title>Hello, world!</title>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="position: sticky; top: 0; z-index: 10">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Notes App</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -128,38 +97,30 @@ video::-webkit-media-controls-panel {
                 </li> -->
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <button id="myBtn" type="button" class="btn btn-outline-success my-2 my-sm-0"
-                    style="margin-right: 10px; width: 100px" onclick="myFunction()">Pause</button>
                 <input id="searchTxt" class="form-control mr-sm-2" type="search" placeholder="Search"
                     aria-label="Search">
                 <!-- <button id="searchBtn" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
             </form>
         </div>
     </nav>
-    <video controls loop id="myVideo">
-        <!-- <source src="rain.mp4#t=15,20" type=" video/mp4"> -->
-        <source src="C:\Users\Sandeep.D.Mishra\Downloads\Badla.mp4#t=40,50" type="video/mp4">
-    </video>
-    <div class="container">
+    <div class="container my-3">
+        <h1>Welcome to magic notes</h1>
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Add a Note</h5>
+                <div class="form-group">
+                    <textarea class="form-control" id="addTxt" placeholder="Enter Your Notes Here..."
+                        rows="5"></textarea>
 
-        <div class="content">
-            <h1>Welcome to magic notes</h1>
-            <div class="card">
-                <div class="card-body">
-                    <h5 class="card-title">Add a Note</h5>
-                    <div class="form-group">
-                        <textarea class="form-control" id="addTxt" placeholder="Enter Your Notes Here..." rows="5"
-                            style="background: rgba(0, 0, 0, 0); color: #f1f1f1;"></textarea>
-
-                    </div>
-                    <button class="btn btn-primary" id="addBtn">Add Note</button>
                 </div>
+                <button class="btn btn-primary" id="addBtn">Add Note</button>
             </div>
-            <h1>Your Notes: <span id=noteCount></span></h1>
-            <hr>
+        </div>
+        <h1>Your Notes</h1>
+        <hr>
 
-            <div id="notes" class="row container-fluid">
-                <!--
+        <div id="notes" class="row container-fluid">
+            <!--
             <div class="noteCard my-2 mx-2 card" style="width: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title">Note</h5>
@@ -167,10 +128,22 @@ video::-webkit-media-controls-panel {
                     <button class="btn btn-primary">Delete Note</button>
                 </div>
             </div>
-                 -->
-            </div>
+        -->
         </div>
+        <!-- <div id="notes23" class="row container-fluid">
+            <div id="trick" class="noteCard my-2 mx-2 card" onresize="alert('Click!')"
+                style="width: 18rem; resize: both; overflow: auto;">
+                <div class="card-body">
+                    <h5 class="card-title">Note</h5>
+                    <p class="card-text"></p>
+                    <button class="btn btn-primary">Delete Note</button>
+                </div>
+            </div>
+        </div> -->
     </div>
+
+    </div>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -183,11 +156,6 @@ video::-webkit-media-controls-panel {
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
-
-
-
-
-
 
 </body>
 
