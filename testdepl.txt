@@ -1,0 +1,296 @@
+
+<html>
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+    <style>
+          /* Font Definitions */
+          @font-face {
+          font-family: Courier;
+          }
+
+          @font-face {
+          font-family: Wingdings;
+          }
+
+          @font-face {
+          font-family: Calibri;
+          }
+
+          @font-face {
+          font-family: Tahoma;
+          }
+          /* Style Definitions */
+
+          p.RamNormal, li.RamNormal, div.RamNormal {
+          margin-top: 7.0pt;
+          margin-right: 0cm;
+          margin-bottom: 0cm;
+          margin-left: 0cm;
+          margin-bottom: .0001pt;
+          line-height: 14.0pt;
+          font-size: 11.0pt;
+          font-family: "Calibri","sans-serif" !important;
+          color: black;
+          }
+
+          #AuthCodeBlock {
+          text-align: center !important;
+          }
+
+          p.IntroText, div.IntroText {
+          margin-top: 0cm;
+          margin-right: 0cm;
+          margin-bottom: 24.0pt;
+          margin-left: 0cm;
+          text-align: center;
+          font-size: 21.0pt;
+          font-family: "Calibri","sans-serif" !important;
+          color: #747474;
+          }
+
+          p.DoNot, div.IntroText {
+          margin-top: 0cm;
+          margin-right: 0cm;
+          margin-bottom: 10.0pt;
+          margin-left: 0cm;
+          text-align: center;
+          font-size: 21.0pt;
+          font-family: "Calibri","sans-serif" !important;
+          color: #747474;
+          }
+
+          p.NatId {
+          margin-top: 0cm;
+          margin-right: 0cm;
+          margin-bottom: 24.0pt;
+          margin-left: 0cm;
+          padding-left: 10px;
+          text-align: left;
+          font-size: 15.0pt;
+          font-family: "Calibri","sans-serif" !important;
+          color: #747474;
+          }
+
+
+
+          h2 {
+          margin-top: 20.0pt;
+          margin-right: 0cm;
+          margin-bottom: 0cm;
+          margin-left: 0cm;
+          margin-bottom: .0001pt;
+          line-height: 23.0pt;
+          page-break-after: avoid;
+          font-size: 21.0pt;
+          font-family: "Calibri","sans-serif" !important;
+          color: #8A8A89;
+          font-weight: normal;
+          text-align:center;
+          }
+
+          #bannerTitle {
+          color: #fff;
+          font-weight: 100;
+          font-size:20px;
+          padding-top: 35px !important;
+          text-align: center;
+          font-family:"swiss721bt", "Helvetica Neue", "Helvetica", "Arial", "sans-serif" !important;
+          margin-top:8pt;
+          }
+
+          @media only screen and  (max-device-width: 441px){
+          #bannerTitle {
+          font-size: 42px;
+          text-align: center !important;
+          padding-top: 22px;
+          float:left;
+          font-weight: 100;
+          }
+          }
+          div{display:block;}
+          .banner-logo {
+          max-width:240px;
+          float:left;
+          margin:15px !important;
+          }
+          @media only screen and (max-device-width: 441px){
+          .banner-logo {
+          width: 500 !important;
+          height: 100 !important;
+          }
+          }
+          @media only screen and  (max-device-width: 441px){
+          .EmailSection{
+          display:block;}
+          .EmailTable{
+          float:left;
+          width:100% !important;
+          }
+          }
+          .gradient{
+          background:#16494D;
+          background:linear-gradient(-45deg,#003B3F 50%,#16494D 50%);
+          background:-ms-linear-gradient(left, #003B3F 50%, #16494D 50%);
+          filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr=#003B3F, endColorstr=#16494D)";
+          -ms-filter: "progid:DXImageTransform.Microsoft.gradient (GradientType=0, startColorstr=#003B3F, endColorstr=#16494D)";
+          float:left;
+          width:800px;
+          }
+          @media only screen and  (max-device-width: 441px) {
+          .gradient{
+          height:200px;
+          width:100% !important;
+          }
+          }
+          /* Page Definitions */
+
+          @page {
+          }
+
+          @page EmailSection {
+          margin:auto;
+          }
+
+          div.EmailSection {
+          page: EmailSection;
+          }
+
+          ol {
+          margin-bottom: 0cm;
+          }
+
+          ul {
+          margin-bottom: 0cm;
+          list-style-type: disc;
+          }
+
+          div{display:block;}
+
+          @media only screen and  (max-device-width: 441px) {
+          td {
+          display: table-row;
+          }
+          }
+          @media (max-width: 768px){
+          td{
+          display: block;
+          }
+          }
+        </style>
+  </head>
+  <body>
+    <table class="gradient" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;width: 800px;">
+      <tr>
+        <td style="mso-padding-alt:10px;">
+          <img class="banner-logo" alt="Australian Government logo" style="display:block;width:250px;height:auto;" src="http://10.196.83.14:8110/assets/images/crest.png" />
+        </td>
+        <td style="text-align:center;">
+          <span id="bannerTitle"> Relationship Authorisation Manager</span>
+        </td>
+      </tr>
+    </table>
+    <div style="clear:left" />
+    <table class="EmailTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;width:800px;">
+      <tr>
+        <td valign="top">
+          <p class="IntroText" style="font-size:20pt;margin-bottom:1pt;margin-top:10pt;" margin-top="1cm" margin-bottom="0cm">Authorisation request</p>
+          <p class="IntroText" style="font-size:10pt;margin-top:0cm;font-weight:bold" margin-top="0cm">Relationship Authorisation Manager (RAM)</p>
+        </td>
+      </tr>
+    </table>
+    <table class="EmailTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;width:800px;">
+      <tr>
+        <td valign="top" style="padding-left:0.5cm;">
+          <div style="margin-left:18.0pt;">
+            <span style="font-size:11.0pt;font-family:Calibri,sans-serif;color:black;">
+                    Hi <b>Adam</b></span>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <table class="EmailTable" border="0" style="border-collapse:collapse;width: 800px;">
+      <tr style="margin-bottom:50px;">
+        <td valign="top" style="padding:0cm 0cm 0cm 0cm;">
+          <div class="EmailSection" style="display:block;float:left;">
+            <table class="EmailTable" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;table-layout:auto;width: 800px;">
+              <tr style="height:201.15pt;">
+                <td valign="top" style="padding:0cm 0cm 0cm 0.5cm;">
+                  <p class="RamNormal" style="margin-left:18.0pt;">
+                You have been appointed to access and transact with online government services on behalf of:
+              </p>
+                  <p class="RamNormal" style="margin-left:18.0pt;margin-top:5pt">
+                    <b>The Director for 45002001901 (ABN 45 002 001 901).
+                </b>
+                  </p>
+                  <div class="AuthCodeBlock">
+                    <p class="RamNormal" style="text-align:center;color:#0D7E82;margin-top:20pt;">
+                      <b>Your authorisation request code</b>
+                    </p>
+                    <h2 style="text-align:center;color:#0D7E82;letter-spacing:3px;margin-top:10pt;">g66Jz5</h2>
+                    <p class="RamNormal" style="text-align:center;color:#0D7E82;">
+                      <b>
+                    (Important: this code will expire on
+                    Friday, 19 May 2023).
+                  </b>
+                    </p>
+                  </div>
+                  <p class="RamNormal" style="margin-top:15pt;margin-bottom:10px;margin-left:18.0pt;line-height:normal;color:#747474;">
+                To enter your code:
+              </p>
+                  <p class="RamNormal" />
+                  <ol style="font-family:Calibri,sans-serif;">
+                    <li>
+                      <p class="RamNormal" style="margin-top:6.0pt;margin-right:0cm; margin-bottom:.0001pt; margin-left:0.0pt;line-height:normal;">
+                        <b>Log in to RAM </b>using your Digital Identity such as myGovID (access RAM at info<span>.authorisationmanager</span>.gov<span>.au</span>)
+                  </p>
+                    </li>
+                    <li>
+                      <p class="RamNormal" style="margin-top:6.0pt;margin-right:0cm; margin-left:0.0pt;margin-bottom:.0001pt;line-height:normal;">
+                        <b>Enter the code </b>in the authorisation code field provided (code is case sensitive)
+                  </p>
+                      <p class="RamNormal" style="margin-left:0.0pt;margin-right:5pt;text-align:justify;">
+                        <b>Note: if the code has expired, </b>contact your authorising representative to have them issue a new code.
+                  </p>
+                    </li>
+                    <li>
+                      <p class="RamNormal" style="margin-top:6.0pt;margin-right:0cm;margin-left:0.0pt; margin-bottom:.0001pt; line-height:normal;">
+                        <b>Submit</b>
+                      </p>
+                    </li>
+                  </ol>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </td>
+      </tr>
+    </table>
+    <table class="EmailTable" border="0" style="border-collapse:collapse;width: 800px;">
+      <tr style="margin-bottom:50px;">
+        <td valign="top" style="padding:0cm 0cm 0cm 0.5cm;">
+          <p class="RamNormal" style="margin-left:18.0pt;margin-bottom:0pt;margin-top:25pt;">Regards</p>
+          <p class="RamNormal" style="margin-left:18.0pt;margin-top:0pt;margin-bottom:10px;">Relationship Authorisation Manager (RAM) Team</p>
+          <br />
+        </td>
+      </tr>
+      <tr>
+        <td class="gradient" style="height:30px;">
+          <p class="IntroText" style="font-size:12pt;margin-bottom:2pt;margin-top:2pt;color:white;">
+                Visit info<span>.authorisationmanager</span>.gov<span>.au</span></p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="DoNot" style="font-size:10pt;">
+            <i>Do not reply to this email. This email was sent from an unmonitored mailbox.</i>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p class="NatId" style="font-size:8pt;">74200.502043-06-2020</p>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
